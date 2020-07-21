@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- page1 시작 -->
+    <div data-role="page" id="page1">
+        <div data-role="header" data-position="fixed">
+            <!-- header에서 a는 상단 버튼 -->
+            <a href="#page2" class="ui-btn-right">다음</a>
+            <h1 style="font-family: 굴림; color: blue;">Home</h1> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" style="background-color: yellow; color: blue;">A</a></li>
+                    <li><a href="#" class="ui-btn-active">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                </ul>
+            </div>            
+        </div>
+        <div data-role="content">
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+            <p>내용</p>
+        </div>
+        <div data-role="footer" class="ui-bar" data-position="fixed">
+            <div data-role="controlgroup" data-type="horizontal" data-position="fixed">
+                <a href="https://m.naver.com" style="background-color: white;"><img src="E:\html\이경배\img\naver.ico" width="18"></a>
+                <a href="https://google.com" style="background-color: white;"><img src="E:\html\이경배\img\google.png" width="18"></a>
+                <a href="https://m.daum.net" style="background-color: white;"><img src="E:\html\이경배\img\daum.jpg" width="18"></a>
+                <a href="https://m.youtube.com" style="background-color: white;"><img src="E:\html\이경배\img\youtube.png" width="18"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- page2 시작 -->
+    <div data-role="page" id="page2">
+        <div data-role="header" data-fullscreen="true" data-position="fixed">
+            <a href="#page1">이전</a>
+            <h1>PAGE2</h1>
+            <a href="#page3" class="ui-btn-right">다음</a>
+        </div>
+        <div data-role="content">
+            <p>내용내용</p>
+            <p>내용내용</p>
+            <p>내용내용</p>
+            <p>내용내용</p>
+            <p>내용내용</p>
+            <p>내용내용</p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true" data-position="fixed">
+            <h2>꼬리말</h2>
+        </div>
+    </div>
+
+    <!-- page3 시작 -->
+    <div data-role="page" id="page3">
+        <div data-role="header" data-add-next-btn="true" data-back-btn-text="뒤로가기" data-position="fixed">
+
+            <!-- <a href="#page1" class="ui-btn-right">처음으로</a> -->
+            <h1>PAGE3</h1>
+            <a href="#page2" class="ui-btn-left">이전</a>
+        </div>
+        <div data-role="content">
+            <p>내용*3</p>
+            <p>내용*3</p>
+        </div>
+        <div data-role="footer" data-position="fixed" data-position="fixed">
+            <h1>꼬리말</h1>
+        </div>
+    </div>
+</body>
+</html>

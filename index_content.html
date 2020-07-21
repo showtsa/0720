@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> -->
+    <!-- my icon 생성 -->
+    <style>
+        .ui-icon-Wstar-icon:after {
+            background : url(img/star-white.png);
+            background-size: 22px 22px;
+        }
+        .ui-icon-Bstar-icon:after {
+            background : url(img/star-black.png);
+            background-size: 22px 22px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- MAIN PAGE -->
+    <div id="main" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h3>Mobile HTML</h3>
+            <a href="#page2" class="ui-btn-right">NEXT</a>
+        </div>
+        <div data-role="content">
+            <!-- 링크: a태그, 속성: button | input 태그 -->
+            <p>버튼생성하기</p>
+            <!-- <a href="#" data-role="button" data-inline="true">버튼"a" inline</a>
+            <button data-mini="true">버튼"button" mini</button>
+            <input type="button" value= "버튼input inline mini" data-inline="true" data-mini="true">
+            <input type="button" value="입력버튼">
+            <input type="submit" value="전송(확인)">
+            <input type="reset" value="취소"> -->
+            <!-- <hr style="height: 500px; width: 500px; background-color: lavender; border: skyblue; border-style: dotted; border-width: 5px;"> -->
+            <div data-role="controlgroup">
+                <a href="#main" data-role="button" data-icon="home" data-iconpos="notext">HOME</a>
+                <a href="https://google.com" data-role="button" data-icon="search" data-iconpos="right" data-mini="true">검색</a>
+            </div>
+            <div data-role="controlgroup" data-type="horizontal" data-position="fixed">
+                <button type="submit" data-icon="check" data-inline="true" data-iconpos="bottom">확인</button>
+                <input type="reset" data-icon="refresh" value="새로고침" data-inline="true" data-iconpos="top">
+                <button type="button" data-icon="Wstar-icon" data-iconpos="top" data-inline="true">whitestar</button>
+                <button type="button" data-icon="Bstar-icon" data-iconpos="top" data-inline="true">blackstar</button>
+            </div>
+            <hr style="height: 5px; background-color: black;">
+            <div>
+                <button data-theme="a">button"a"</button>
+                <button data-theme="b">button"b"</button>
+                <button data-theme="c">button"c"</button>
+                <button data-theme="d">button"d"</button>
+                <button data-theme="e">button"e"</button>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>FOOTER</h4>
+        </div>
+    </div>
+    <!-- PAGE2 -->
+    <div id="page2" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>PAGE2</h1>
+            <a href="#main">PREV</a>
+        </div>
+        <div data-role="content">
+            <p>List View</p>
+            <ul data-role="listview" data-inset="true" data-split-icon="arrow-u-r">
+                <li data-role="listdivider">4계절</li>
+                <li><a href="https://search.naver.com/search.naver?where=image&query=%EB%B4%84&ie=utf8&sm=tab_she&qdt=0">봄</a>
+                    <a href="https://terms.naver.com/entry.nhn?docId=1103349&cid=40942&categoryId=32299"></a>
+                </li>
+                <li><a href="https://search.naver.com/search.naver?where=image&query=%EC%97%AC%EB%A6%84&ie=utf8&sm=tab_she&qdt=0">여름</a>
+                    <a href="https://terms.naver.com/entry.nhn?docId=581128&cid=46617&categoryId=46617"></a>
+                </li>
+                <li><a href="https://search.naver.com/search.naver?where=image&query=%EA%B0%80%EC%9D%84&ie=utf8&sm=tab_she&qdt=0">가을</a>
+                    <a href="https://terms.naver.com/entry.nhn?docId=1055140&cid=40942&categoryId=32286"></a>
+                </li>
+                <li><a href="https://search.naver.com/search.naver?where=image&sm=tab_jum&query=%EA%B2%A8%EC%9A%B8">겨울</a>
+                    <a href="https://terms.naver.com/entry.nhn?docId=1059297&cid=40942&categoryId=32299"></a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>
